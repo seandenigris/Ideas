@@ -1,0 +1,151 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-07-27T16:03:49.729072-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-07-27T16:03:49.729072-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "NUvbGoKEDQCl9wGFBlv4Zg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "I'm at the point in a CD where I want to remember/record something.\r\rI can see two quick use cases.  One is a lecture, where the pace is pre-determined (although one could usually record it).  Here, the user will want to be able to quickly jot down what comes to mind, although it would be very powerful to also have the option to fit it in or see possible access points e.g. \"I have a question.  How does the harvard study's conclusion that... effect your position?\"\r\rThe pure notes approach could look like:\rnote: 'first part of interaction is getting into the group'.\rnote: 'step one is the opener'."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T16:03:47.082433-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T16:03:48.087273-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "TWAJGIKEDQCl9mxUBlv4Zg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Notes"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T16:08:44.897405-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-07-27T16:09:42.534309-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oyBXLIKEDQCl+PWGBlv4Zg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "1. Playing a DVD - I'm starting with this because my first concrete scenario is playing a DVD, and I don't know exactly how this fits into the bigger picture.  There may come a time when just playing the DVD means that my mind is already considering something.  So:\r\tCurrent:\r\t\taDVD := DVD playCurrent. \"which prompts for the title if it's watched for the first time\"\r\tAlternative:\r\t\taMind focusOnDVD: 'Disk 2'.\r\t\t\tcurrentFocus := DVD titled: 'Disc 2'.\r2. Considering the content - at this time, we'll go through the DVD???\r\t\tReasons to go through the DVD:\r\t\t\t1. a pause and a consider will always happen together, because the mind can't (or won't, in our model) watch the DVD and consider what it's learning at the same time (assumption), so, for the user's convenience of sending only one message, one of the mind and DVD must know about each other, and we're arbitrarily chosing the DVD to start.\r\t\t\t2. we may be considering things, while focused on the DVD, that do not have the DVD as their source; and it seems that this model will afford the flexibility that the user can send messages directly to the mind if they should not be sourced from the DVD\r\t2 scenarios so far:\r\t\t* add info to the current distinction, with the DVD as the source\r\t\t* add info that we're not sure where to put.  In this case, it ended up under a new distinction, which has no source\r\tCurrent:\r\t\t\"Setup\"\r\t\t| aMind |\r\t\taMind := Mind ofUser.\r\t\taMind consider: 'Topic'.\r\t\taDVD := DVD playCurrent.\r\r\t\t\"Action\"\r\t\taDVD add: 'blah blah blah' toNoteAsA: 'communication'.\r\t\t\taDVD pause.\r\t\t\taMind consider: 'blah blah blah' asA: 'communication'.\r\t\taDVD play.\r\t\t\r\t\taDVD note: 'The wolf, the lamb and the cabbage' asA: story \"or several options e.g. of:, called:?\"\r\t\t\taDVD pause.\r\t\t\taMind considerWhereToPutThe: 'story' named: 'The wolf, the lamb and the cabbage'\r\r2a. Considering content that I'm not sure where to put.\rTwo options are:\r  1. keep it in the current context and mark that it is not where it belongs\r  2. put it where it belongs right now\r\tOkay, I have this story titled 'blah blah blah'.  What do I want to do with it?\r\t1. Remember it unless I explicitly forget it - you never know when and where it may be relevant in the future.\r\t2. I want to consider where (if anywhere, or multiple places) it is useful now\n\n* another option is that the mind registers as watching the DVD, and the DVD pauses when no one is watching it.  This one seems more natural (in the computer world of smart objects, but it's working for now, and I want to wait and see when the next source type comes, how that impacts)"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-07-27T16:03:01.068336-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-07-27T16:03:07.432014-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Observation/Focus"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "d2910818-8284-0d00-a5f5-a1c0065bf866"
+	}
+}
