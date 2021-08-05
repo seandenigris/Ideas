@@ -53,7 +53,6 @@ IdIdea >> gtViewGraphFor: aView [
 						constraintsDo: [ :c | 
 							c horizontal fitContent.
 							c vertical fitContent].
-					"e allChildrenBreadthFirstDo: [ :c | c vFitContent; hFitContent ]."
 					e ];
 				with: { self }.
 			"m edges connectFrom: #parent."
