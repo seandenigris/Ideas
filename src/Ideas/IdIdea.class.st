@@ -47,12 +47,13 @@ IdIdea >> gtViewGraphFor: aView [
 			m nodes
 				stencil: [ :obj | 
 					| e |
-					e := (LeCoderCommentElement coderElementFor: #LePage)"
-					(BlTextElement text: 'blah' asRopedText)"
+					e := self editor
+					layout: BlLinearLayout new;
+    border: (BlBorder paint: Color veryLightGray width: 1);
 						constraintsDo: [ :c | 
-							c horizontal fitContent "exact: 100".
-							c vertical fitContent "exact: 100" ].
-					e allChildrenBreadthFirstDo: [ :c | c vFitContent; hFitContent ].
+							c horizontal fitContent.
+							c vertical fitContent].
+					"e allChildrenBreadthFirstDo: [ :c | c vFitContent; hFitContent ]."
 					e ];
 				with: { self }.
 			"m edges connectFrom: #parent."
