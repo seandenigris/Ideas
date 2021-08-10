@@ -104,7 +104,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-27T15:52:53.177238-04:00"
+						"dateAndTimeString" : "2021-07-29T15:16:00.143921-04:00"
 					}
 				},
 				"uid" : {
@@ -114,7 +114,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Person - with e.g. `beliefs`, `behaviors`, `aim(s)`, etc? Modelled as a unity? Society of mind?"
+				"string" : "# Person\nwith e.g. `beliefs`, `behaviors`, `aim(s)`, etc? Modelled as a unity? Society of mind?"
 			},
 			{
 				"__type" : "textSnippet",
@@ -327,7 +327,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-27T16:13:27.084305-04:00"
+						"dateAndTimeString" : "2021-07-29T15:17:38.424449-04:00"
 					}
 				},
 				"uid" : {
@@ -337,7 +337,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Mind\n\nThere are many psychological and spiritual systems to explain \"who\" is \"saying\" th e\n\nThen, there's the information tree itself, let's call it the mind, because that includes all perceptions, but the other part is the scientific part, which was invented to overcome the limitations of the mind.  So, it's really a ScientificMind, that is, an experience of the universe, with the rigor of science.\r\rSo the mind considers things.  I don't want to say remember because I'm not taking things as fact, just trying them on and seeing if they fit."
+				"string" : "# Mind\n\nThis level of description is actually different than `person` in an interesting way - it doesn't inherently speak to ownership i.e. whose mind? The users? A partner a la \n\nThere are many psychological and spiritual systems to explain \"who\" is \"saying\" the things in our head e.g. the \"inner dictator\"\n\nThen, there's the information tree itself, let's call it the mind, because that includes all perceptions, but the other part is the scientific part, which was invented to overcome the limitations of the mind.  So, it's really a ScientificMind, that is, an experience of the universe, with the rigor of science.\r\rSo the mind considers things.  I don't want to say remember because I'm not taking things as fact, just trying them on and seeing if they fit."
 			}
 		]
 	},

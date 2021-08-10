@@ -23,7 +23,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:48:30.602802-04:00"
+									"dateAndTimeString" : "2020-10-25T20:53:12.380116-04:00"
 								}
 							},
 							"editEmail" : {
@@ -34,17 +34,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:52:53.181514-04:00"
+									"dateAndTimeString" : "2020-10-25T20:53:30.689317-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "eAey3IGEDQCl6VaeBlv4Zg=="
+								"uidString" : "KqUs/pWHAAAAAAAAAAAAAA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Possible API\rIdentity mine.\rIdentity mine behaveLike: (HumanBehavior whereYou: 'my body is spread out').\rIdentity mine believeThat: (Belief that: 'People are basically good').\rIdentity mine experienced: (Experience in: 1993 when: 'something happened')."
+							"string" : "<https://twitter.com/michael_nielsen/status/1317329879424065547>"
 						},
 						{
 							"__type" : "textSnippet",
@@ -60,7 +60,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:52:58.125169-04:00"
+									"dateAndTimeString" : "2020-10-25T20:53:19.338026-04:00"
 								}
 							},
 							"editEmail" : {
@@ -71,17 +71,202 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:52:58.125169-04:00"
+									"dateAndTimeString" : "2020-10-25T20:53:26.629358-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "fHAF9IGEDQCl7heMBlv4Zg=="
+								"uidString" : "Myk825xBAAAAAAAAAAAAAA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "| me activity |\rme := MyLife instance.\ractivity := MyActivity of: 'eating'.\ractivity consumes.\rme considerDoing: activity."
+							"string" : "<https://logseq.com/>"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-01-17T13:25:17.481779-05:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-01-17T13:26:17.649869-05:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "yfXJX++EAAAAAAAAAAAAAA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[Promnesia demo: integrate Roam Research with your browser](https://www.youtube.com/watch?v=wyJI96AH91o) via Konrad Hinsen on Discord 1/5/21"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2020-10-25T20:54:16.016396-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2020-10-25T20:54:16.016396-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "RNiJEhlNAAAAAAAAAAAAAA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "org-mode - emacs"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2020-10-25T20:54:29.335613-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2020-10-25T20:54:29.335613-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "CczkQ/N1AAAAAAAAAAAAAA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "https://www.martinfowler.com/bliki/ProjectionalEditing.html"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-01-25T11:42:20.582027-05:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-01-25T11:42:20.991486-05:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "nMhDvhtuAAAAAAAAAAAAAA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "<https://channel9.msdn.com/Series/DSL-DevCon-2009/Intentional-Software>"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "jenkins@feenk.com"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-02-07T21:14:20.690364-05:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-07-30T13:58:28.513185-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "4KURQ015AAAAAAAAAAAAAA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Xanadu, tiddlywiki, Roam"
 						}
 					]
 				},
@@ -93,7 +278,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-27T15:52:53.177238-04:00"
+						"dateAndTimeString" : "2020-10-25T20:52:51.39266-04:00"
 					}
 				},
 				"editEmail" : {
@@ -104,240 +289,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-29T15:16:00.143921-04:00"
+						"dateAndTimeString" : "2020-10-25T20:54:32.864624-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "xt3M84GEDQCl7YSYBlv4Zg=="
+					"uidString" : "yhTkPpzNAAAAAAAAAAAAAA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Person\nwith e.g. `beliefs`, `behaviors`, `aim(s)`, etc? Modelled as a unity? Society of mind?"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:51:07.636178-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:55:23.513932-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "F/Je7YGEDQCl7CRCBlv4Zg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Landmark API example\n\nm := Mind current.\rm distinguish: (Distinction named: 'Enrollment').\rm experience: (Reality that: 'Every conversation is different').\n\nBut it's so subjective - the categorization/model and the information"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:55:25.030097-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:55:25.030097-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "gZTH/IGEDQCl7/rmBlv4Zg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Our model of the mind will ultimately be one that overcomes the limits of our real minds.\r\rFor now, the mind has two simultaneous functions:\r* it considers something internally\r* while optionally watching something external"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:56:05.498007-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:56:29.290512-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "oDse/4GEDQCl8EDZBlv4Zg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "`#currentFocus`"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:56:33.748438-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:56:35.582696-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "bMbSAIKEDQCl8Y2QBlv4Zg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Context stack"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:58:17.572617-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:58:30.966838-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "/70KB4KEDQCl8ieRBlv4Zg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "playbook (knownSituation keys)"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-27T15:48:46.04907-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-07-29T15:18:26.904722-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "p0AD5YGEDQCl64myBlv4Zg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# Mind\n\nThis level of description is actually different than `person` in an interesting way - it doesn't inherently speak to ownership i.e. whose mind? The users? A partner a la Luhmann?\n\nThere are many psychological and spiritual systems to explain \"who\" is \"saying\" the things in our head e.g. the \"inner dictator\"\n\nThen, there's the information tree itself, let's call it the mind, because that includes all perceptions, but the other part is the scientific part, which was invented to overcome the limitations of the mind.  So, it's really a ScientificMind, that is, an experience of the universe, with the rigor of science.\r\rSo the mind considers things.  I don't want to say remember because I'm not taking things as fact, just trying them on and seeing if they fit."
+				"string" : "## Research"
 			}
 		]
 	},
@@ -349,7 +311,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-07-27T15:46:25.490918-04:00"
+			"dateAndTimeString" : "2021-07-30T13:59:45.07992-04:00"
 		}
 	},
 	"editEmail" : {
@@ -360,15 +322,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-07-27T15:46:30.594793-04:00"
+			"dateAndTimeString" : "2021-07-30T13:59:49.184111-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Container"
+		"title" : "Main"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "6d43b1dc-8184-0d00-a5e8-f798065bf866"
+		"uuid" : "e8ddb8b8-bc84-0d00-8baf-09d10bd5632e"
 	}
 }

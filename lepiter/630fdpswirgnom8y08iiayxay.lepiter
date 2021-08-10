@@ -34,7 +34,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:47:19.345876-04:00"
+									"dateAndTimeString" : "2021-07-30T14:18:37.584375-04:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +44,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Okay, so there's information.\r\rIt is usually a conversation/story.  If we believe the speaker, it's what's so, but who knows if this is true.  To be truer, it could be \"some people...\"  The what's-so-est thing is \"N said that...\"  So, let's put aside the issue of truth for a minute.  Let's say there's no such thing... maybe, lol.\r\rOkay, so what information does this represent?  There are (at least) two ways to look at it:\r* mental model - how the world is\r* utility - how that applies to my life and what I say matters (my game).\r\rSo let's explore the mental model aspect.  I may already 'know' the relevant concepts are, so what is being provided?  The new part is that N is reporting on an observation I haven't necessarily had. So the link is the piece we want to record here.\r\rWhat is the fundamental unit of information?  A Thing?  Conversation?  Idea?  Thought?  Impression?  Story?  Information?  Which abstraction captures everything???"
+							"string" : "Okay, so there's information.\r\rIt is usually a conversation/story.  If we believe the speaker, it's what's so, but who knows if this is true.  To be truer, it could be \"some people...\"  The what's-so-est thing is \"N said that...\"  So, let's put aside the issue of truth for a minute.  Let's say there's no such thing... maybe, lol.\r\rOkay, so what information does this represent?  There are (at least) two ways to look at it:\r* mental model - how the world is\r* utility - how that applies to my life and what I say matters (my game).\r\rSo let's explore the mental model aspect.  I may already 'know' the relevant concepts, so what is being provided?  The new part is that N is reporting on an observation I haven't necessarily had. So the link is the piece we want to record here.\r\rWhat is the fundamental unit of information?  A Thing?  Conversation?  Idea?  Thought?  Impression?  Story?  Information?  Which abstraction captures everything???\n\nSome systems simply call it a note, which kind of sidestepps the issue. Maybe that's the simplest thing that could work..."
 						},
 						{
 							"__type" : "textSnippet",
@@ -82,6 +82,118 @@
 								"__type" : "textStyle"
 							},
 							"string" : "## Idea\n\nDefinition (from Apple Dictionary):\r- a concept or mental impression: our menu list will give you some idea of how interesting a low-fat diet can be.\r- an opinion or belief: nineteenth-century ideas about drinking.\r\rIt starts on the level of hypothesis, a proposed explanation of a phenomenon which still has to be rigorously tested. After undergoing extensive testing, it may become a theory, generally accepted to be the accurate explanation behind an observation.\r\rThere may be a third level of personal verification. If you test a hypothesis, it is a theory for me, because my confidence in it depends on my trust in your intentions, abilities, and performance - in your understanding of the problem, design of your experiement, and how you carried it out. Only when I have done all that work myself can an idea be more than a theory for me. Of course, I, as a flawed human being, am prone to the same types of errors that you would make, so the most robust evidence would be independently observed by multiple people, oneself included.\n\nImplementation Attempts:\n- {{gtClass:FwIdea}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-07-29T15:12:54.760655-04:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-07-29T15:15:09.967451-04:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "rQ5loKmEDQC5GKa2Bwd/2A=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "This is an interesting one because it encompasses \"idea, feeling, or opinion\" and also includes the possibility of subjectivity in that the \"mark impressed on a surface\" depends both on the instrument and the surface, but it does seem to be more or less a synonym for `idea`, so maybe TSTTCPW..."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-07-29T15:12:43.979869-04:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-07-29T15:12:46.343923-04:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "iC/in6mEDQC5F1k4Bwd/2A=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "## Definition\nnoun\n1 an idea, feeling, or opinion about something or someone, especially one formed without conscious thought or on the basis of little evidence: his first impressions of Manchester were very positive | they give the impression that all is sweetness and light.\n• an effect produced on someone: her courtesy and quick wit had made a good impression.\n• a difference made by the action or presence of someone or something: the floor was too dirty for the mop to make much impression.\n2 an imitation of a person or thing, especially one done to entertain: he did an impression of Frank Sinatra.\n• a graphic or pictorial representation of someone or something: the police have issued an artist's impression of the attacker.\n3 a mark impressed on a surface by something: the impression of his body on the leaves.\n• Dentistry a negative copy of the teeth or mouth made by pressing them into a soft substance.\n4 the printing of a number of copies of a book, periodical, or picture for issue at one time.\n• [usually with modifier] mainly British a particular printed version of a book or other publication, especially one reprinted from existing type, plates, or film with no or only minor alteration: a copy of the first impression. Compare with edition.\n• a print taken from an engraving."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-07-29T15:12:37.1485-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-07-29T15:12:37.1485-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "LvJ5n6mEDQC5FnAcBwd/2A=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "# im·pres·sion | imˈpreSHən |\n"
 						},
 						{
 							"__type" : "textSnippet",
