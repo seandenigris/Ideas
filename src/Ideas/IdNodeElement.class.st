@@ -73,3 +73,11 @@ IdNodeElement >> model: macro [
 				c vertical fitContent ];"
 				background: Color green ].
 ]
+
+{ #category : 'lepiter' }
+IdNodeElement >> selectAndScrollTo: snippet [
+]
+
+{ #category : 'lepiter' }
+IdNodeElement >> selectionTransformation: aBlock [
+]

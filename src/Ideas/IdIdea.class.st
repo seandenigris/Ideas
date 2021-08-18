@@ -16,9 +16,21 @@ IdIdea class >> example [
 		then: [ :idea | ]
 ]
 
+{ #category : 'instance creation' }
+IdIdea class >> fromString: aString [
+	^ self new
+		markdownString: aString;
+		yourself
+]
+
 { #category : 'accessing' }
 IdIdea >> asElement [
 	^ IdNodeElement on: self
+]
+
+{ #category : 'accessing' }
+IdIdea >> displayString [
+	^ self text string
 ]
 
 { #category : 'accessing' }
@@ -61,27 +73,33 @@ IdIdea >> gtViewGraphFor: aView [
 ]
 
 { #category : 'accessing' }
+IdIdea >> markdownString [
+	^ self text string
+]
+
+{ #category : 'accessing' }
 IdIdea >> markdownString: aString [
 	self text string: aString
 ]
 
 { #category : 'accessing' }
-IdIdea >> nodeElement [
-	^ BrEditableLabel new
-		editor: self editor;
-		aptitude: BrGlamorousEditableLabelAptitude new glamorousRegularFontAndSize;
-		constraintsDo: [ :c | 
-			c vertical fitContent.
-			c horizontal matchParent.
-			c grid vertical alignCenter ];
-		when: BrEditorAcceptWish
-			do: [ :aWish | Halt now. self text: aWish text ];
-		text: self text.
+IdIdea >> mind [
+	^ self text database
+]
+
+{ #category : 'accessing' }
+IdIdea >> mind: aMind [
+	self text database: aMind.
+]
+
+{ #category : 'accessing' }
+IdIdea >> printOn: aStream [
+	aStream nextPutAll: self markdownString
 ]
 
 { #category : 'accessing' }
 IdIdea >> text [
-	^ text ifNil: [ text := LeTextSnippet new ]
+	^ text ifNil: [ text := LeIdeaSnippet forIdea: self ]
 ]
 
 { #category : 'accessing' }
