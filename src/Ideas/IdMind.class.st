@@ -145,6 +145,18 @@ IdMind >> newConcept [
 	^ self ideas add: result
 ]
 
+{ #category : 'accessing' }
+IdMind >> newIdea [
+	| lepiterPage |
+	lepiterPage := LePage unnamedPageWithDefaultTitle: ''.
+	self lepiterDatabase addPage: lepiterPage.
+	result := IdIdea new
+		mind: self;
+		lepiterPage: lepiterPage;
+		yourself.
+	^ self ideas add: result
+]
+
 { #category : 'DB' }
 IdMind >> newUniqueUuid [
 	"Return a new UUID unique to this database based on the current content"

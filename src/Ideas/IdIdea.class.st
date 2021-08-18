@@ -2,7 +2,8 @@ Class {
 	#name : 'IdIdea',
 	#superclass : 'Object',
 	#instVars : [
-		'text'
+		'text',
+		'lepiterPage'
 	],
 	#category : 'Ideas'
 }
@@ -36,7 +37,7 @@ IdIdea >> displayString [
 { #category : 'accessing' }
 IdIdea >> editor [
 	^ LeSingleSnippetElement new
-		initializeForSnippet: self text;
+		initializeForPage: self lepiterPage;
 		yourself
 ]
 
@@ -73,8 +74,22 @@ IdIdea >> gtViewGraphFor: aView [
 ]
 
 { #category : 'accessing' }
+IdIdea >> lepiter [
+]
+
+{ #category : 'accessing' }
+IdIdea >> lepiterPage [
+	^ lepiterPage
+]
+
+{ #category : 'accessing' }
+IdIdea >> lepiterPage: aPage [
+	lepiterPage := aPage
+]
+
+{ #category : 'accessing' }
 IdIdea >> markdownString [
-	^ self text string
+	^ self lepiterPage children first string
 ]
 
 { #category : 'accessing' }

@@ -13,7 +13,7 @@ IdConcept >> editor [
 	^ BrEditableLabel new
 		aptitude: BrGlamorousEditableLabelAptitude new glamorousRegularFontAndSize;
 		when: BrEditorAcceptWish
-			do: [ :aWish | self lepiterPage title: aWish text greaseString ];
+			do: [ :aWish | self lepiterPage updateTitle: aWish text greaseString ];
 		text: self lepiterPage title.
 ]
 
