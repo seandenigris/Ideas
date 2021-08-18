@@ -5,7 +5,9 @@ Class {
 		'ideas',
 		'links',
 		'uuid',
-		'userEmailString'
+		'userEmailString',
+		'lepiterDatabase',
+		'result'
 	],
 	#classVars : [
 		'UniqueInstance'
@@ -121,9 +123,26 @@ IdMind >> isDatabase [
 	^ true
 ]
 
+{ #category : 'accessing' }
+IdMind >> lepiterDatabase [
+	^ lepiterDatabase ifNil: [ lepiterDatabase := LeDatabase new ]
+]
+
 { #category : 'DB' }
 IdMind >> links [
 	^ links ifNil: [ links := LeExplicitLinks new ].
+]
+
+{ #category : 'accessing' }
+IdMind >> newConcept [
+	| lepiterPage |
+	lepiterPage := LePage unnamedPageWithDefaultTitle: ''.
+	self lepiterDatabase addPage: lepiterPage.
+	result := IdConcept new
+		mind: self;
+		lepiterPage: lepiterPage;
+		yourself.
+	^ self ideas add: result
 ]
 
 { #category : 'DB' }
