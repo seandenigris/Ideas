@@ -1,28 +1,28 @@
 Class {
-	#name : #IdNodeElement,
-	#superclass : #BlElement,
+	#name : 'IdNodeElement',
+	#superclass : 'BlElement',
 	#instVars : [
 		'model',
 		'expander',
 		'header'
 	],
-	#category : #Ideas
+	#category : 'Ideas'
 }
 
-{ #category : #examples }
+{ #category : 'examples' }
 IdNodeElement class >> example [
 	<gtExample>
 	^ IdIdea example asElement
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 IdNodeElement class >> on: macro [
 	^ self new
 		model: macro;
 		yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdNodeElement >> initialize [
 	super initialize.
 	
@@ -49,12 +49,12 @@ IdNodeElement >> initialize [
 	^ self
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdNodeElement >> model [
 	^ model
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdNodeElement >> model: macro [
 	model := macro.
 	

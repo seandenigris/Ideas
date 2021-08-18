@@ -1,34 +1,34 @@
 Class {
-	#name : #IdIdea,
-	#superclass : #Object,
+	#name : 'IdIdea',
+	#superclass : 'Object',
 	#instVars : [
 		'text'
 	],
-	#category : #Ideas
+	#category : 'Ideas'
 }
 
-{ #category : #examples }
+{ #category : 'examples' }
 IdIdea class >> example [
 	<gtExample>
 	^ self
 		given: [ ]
-		when: [ IdIdea new markdownString: '**Lisp machine**' ]
+		when: [ IdIdea new markdownString: '**Lisp** *machine*' ]
 		then: [ :idea | ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdIdea >> asElement [
 	^ IdNodeElement on: self
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdIdea >> editor [
 	^ LeSingleSnippetElement new
 		initializeForSnippet: self text;
 		yourself
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 IdIdea >> gtEditorOn: aView [
 	<gtView>
 	^ aView explicit
@@ -37,7 +37,7 @@ IdIdea >> gtEditorOn: aView [
 		stencil: [ self editor ]
 ]
 
-{ #category : #views }
+{ #category : 'views' }
 IdIdea >> gtViewGraphFor: aView [
 	<gtView>
 	^ aView mondrian
@@ -60,12 +60,12 @@ IdIdea >> gtViewGraphFor: aView [
 			m ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdIdea >> markdownString: aString [
 	self text string: aString
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdIdea >> nodeElement [
 	^ BrEditableLabel new
 		editor: self editor;
@@ -79,12 +79,12 @@ IdIdea >> nodeElement [
 		text: self text.
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdIdea >> text [
 	^ text ifNil: [ text := LeTextSnippet new ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IdIdea >> text: anObject [
 	text := anObject
 ]
