@@ -6,8 +6,7 @@ Class {
 		'links',
 		'uuid',
 		'userEmailString',
-		'lepiterDatabase',
-		'result'
+		'lepiterDatabase'
 	],
 	#classVars : [
 		'UniqueInstance'
@@ -135,8 +134,8 @@ IdMind >> links [
 
 { #category : 'accessing' }
 IdMind >> newConcept [
-	| lepiterPage |
-	lepiterPage := LePage unnamedPageWithDefaultTitle: ''.
+	| lepiterPage result |
+	lepiterPage := LePage empty.
 	self lepiterDatabase addPage: lepiterPage.
 	result := IdConcept new
 		mind: self;
@@ -147,8 +146,9 @@ IdMind >> newConcept [
 
 { #category : 'accessing' }
 IdMind >> newIdea [
-	| lepiterPage |
+	| lepiterPage result |
 	lepiterPage := LePage unnamedPageWithDefaultTitle: ''.
+	lepiterPage addSnippet: LeTextSnippet empty.
 	self lepiterDatabase addPage: lepiterPage.
 	result := IdIdea new
 		mind: self;
