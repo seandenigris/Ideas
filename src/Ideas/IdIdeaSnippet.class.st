@@ -1,5 +1,5 @@
 Class {
-	#name : 'LeIdeaSnippet',
+	#name : 'IdIdeaSnippet',
 	#superclass : 'LeTextSnippet',
 	#instVars : [
 		'idea'
@@ -8,29 +8,29 @@ Class {
 }
 
 { #category : 'instance creation' }
-LeIdeaSnippet class >> forIdea: anIdea [
+IdIdeaSnippet class >> forIdea: anIdea [
 	^ self new
 		idea: anIdea;
 		yourself
 ]
 
 { #category : 'accessing' }
-LeIdeaSnippet >> asElement [
+IdIdeaSnippet >> asElement [
 	^ self idea asElement
 ]
 
 { #category : 'accessing' }
-LeIdeaSnippet >> idea [
+IdIdeaSnippet >> idea [
 	^ idea
 ]
 
 { #category : 'accessing' }
-LeIdeaSnippet >> idea: anIdea [
+IdIdeaSnippet >> idea: anIdea [
 	idea := anIdea
 ]
 
 { #category : 'accessing' }
-LeIdeaSnippet >> spawnLinkTarget: aNode from: aButton [
+IdIdeaSnippet >> spawnLinkTarget: aNode from: aButton [
 	Halt once.
 	^ super spawnLinkTarget: aNode from: aButton
 ]

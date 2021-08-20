@@ -114,7 +114,7 @@ IdIdea >> printOn: aStream [
 
 { #category : 'accessing' }
 IdIdea >> text [
-	^ text ifNil: [ text := LeIdeaSnippet forIdea: self ]
+	^ text ifNil: [ text := IdIdeaSnippet forIdea: self ]
 ]
 
 { #category : 'accessing' }
