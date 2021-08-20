@@ -15,6 +15,12 @@ IdIdeaSnippet class >> forIdea: anIdea [
 ]
 
 { #category : 'accessing' }
+IdIdeaSnippet class >> leJsonV4Name [
+
+	^ 'ideaSnippet'
+]
+
+{ #category : 'accessing' }
 IdIdeaSnippet >> asElement [
 	^ self idea asElement
 ]
