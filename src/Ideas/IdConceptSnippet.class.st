@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'idea'
 	],
-	#category : 'Ideas'
+	#category : 'Ideas-Support'
 }
 
 { #category : 'instance creation' }

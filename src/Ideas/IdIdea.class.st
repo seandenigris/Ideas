@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'lepiterPage'
 	],
-	#category : 'Ideas'
+	#category : 'Ideas-Core'
 }
 
 { #category : 'examples' }

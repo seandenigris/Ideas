@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'mind'
 	],
-	#category : 'Ideas'
+	#category : 'Ideas-Support'
 }
 
 { #category : 'accessing' }

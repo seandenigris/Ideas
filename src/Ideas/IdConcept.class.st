@@ -5,7 +5,7 @@ Class {
 		'lepiterPage',
 		'mind'
 	],
-	#category : 'Ideas'
+	#category : 'Ideas-Core'
 }
 
 { #category : 'accessing' }

@@ -6,7 +6,7 @@ Class {
 		'expander',
 		'header'
 	],
-	#category : 'Ideas'
+	#category : 'Ideas-Support'
 }
 
 { #category : 'examples' }

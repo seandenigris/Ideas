@@ -1,7 +1,7 @@
 Class {
 	#name : 'IdLeDatabasePageBuilder',
 	#superclass : 'LeDatabasePageBuilder',
-	#category : 'Ideas'
+	#category : 'Ideas-Support'
 }
 
 { #category : 'defaults' }

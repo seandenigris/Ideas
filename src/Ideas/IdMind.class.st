@@ -11,7 +11,7 @@ Class {
 	#classVars : [
 		'UniqueInstance'
 	],
-	#category : 'Ideas'
+	#category : 'Ideas-Core'
 }
 
 { #category : 'accessing' }
