@@ -2,7 +2,6 @@ Class {
 	#name : 'IdIdea',
 	#superclass : 'Object',
 	#instVars : [
-		'text',
 		'lepiterPage'
 	],
 	#category : 'Ideas'
@@ -13,7 +12,7 @@ IdIdea class >> example [
 	<gtExample>
 	^ self
 		given: [ ]
-		when: [ IdIdea new markdownString: '**Lisp** *machine*' ]
+		when: [ IdIdea new markdownString: '[[Lisp]] *machine*' ]
 		then: [ :idea | ]
 ]
 
@@ -74,12 +73,13 @@ IdIdea >> gtViewGraphFor: aView [
 ]
 
 { #category : 'accessing' }
-IdIdea >> lepiter [
-]
-
-{ #category : 'accessing' }
 IdIdea >> lepiterPage [
-	^ lepiterPage
+	lepiterPage ifNotNil: [ ^ lepiterPage ].
+	
+	lepiterPage := LePage unnamedPageWithDefaultTitle: ''.
+	^ lepiterPage 
+		addSnippet: LeTextSnippet empty;
+		yourself
 ]
 
 { #category : 'accessing' }
@@ -114,10 +114,5 @@ IdIdea >> printOn: aStream [
 
 { #category : 'accessing' }
 IdIdea >> text [
-	^ text ifNil: [ text := IdIdeaSnippet forIdea: self ]
-]
-
-{ #category : 'accessing' }
-IdIdea >> text: anObject [
-	text := anObject
+	^ self lepiterPage children first
 ]

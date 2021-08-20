@@ -14,6 +14,18 @@ Class {
 	#category : 'Ideas'
 }
 
+{ #category : 'accessing' }
+IdMind class >> example [
+	^ self 
+		given: [ IdMind new ]
+		when: [ :m |
+			m 
+				addIdea: IdIdea example;
+				addIdea: IdConcept example;
+				yourself ]
+		then: [ :m | m ideas should haveSize: 2 ]
+]
+
 { #category : 'persistence' }
 IdMind class >> restoreFrom: anObject [
 
@@ -54,7 +66,8 @@ IdMind >> addExplicitLinks: aCollectionOfExplicitLinks [
 { #category : 'accessing' }
 IdMind >> addIdea: anIdea [
 	anIdea mind: self.
-	anIdea text uid: self newUniqueUuid.
+	(self lepiterDatabase children includes: anIdea lepiterPage)
+		ifFalse: [ self lepiterDatabase addPage: anIdea lepiterPage ].
 	self ideas add: anIdea
 ]
 
@@ -119,6 +132,16 @@ IdMind >> gtSpotterNewWorkFor: aStep [
 			self addIdea: instance ]
 ]
 
+{ #category : 'accessing' }
+IdMind >> gtViewIdeasOn: aView [
+	<gtView>
+	^ aView list
+		title: 'Ideas' translated;
+		priority: 8;
+		items: [ self ideas asOrderedCollection ];
+		itemText: [ :e | e markdownString asRopedText ]
+]
+
 { #category : 'DB - testing' }
 IdMind >> hasIdeaUID: newUuid [ 
 	^ self ideas anySatisfy: [ :e | e text uid == newUuid ]
@@ -136,7 +159,12 @@ IdMind >> isDatabase [
 
 { #category : 'accessing' }
 IdMind >> lepiterDatabase [
-	^ lepiterDatabase ifNil: [ lepiterDatabase := LeDatabase new ]
+	^ lepiterDatabase ifNil: [ lepiterDatabase := IdLeDatabase new ]
+]
+
+{ #category : 'accessing' }
+IdMind >> lepiterDatabase: anIdLeDatabase [
+	lepiterDatabase := anIdLeDatabase
 ]
 
 { #category : 'DB' }
@@ -146,8 +174,10 @@ IdMind >> links [
 
 { #category : 'accessing' }
 IdMind >> newConcept [
-	| lepiterPage result |
+	| lepiterPage result snippet |
 	lepiterPage := LePage empty.
+	snippet := IdConceptSnippet string: ''.
+	lepiterPage addSnippet: snippet.
 	self lepiterDatabase addPage: lepiterPage.
 	result := IdConcept new
 		mind: self;

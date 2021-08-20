@@ -9,12 +9,35 @@ Class {
 }
 
 { #category : 'accessing' }
+IdConcept class >> defaultLepiterPage [
+
+	^ LePage empty
+		  addSnippet: (IdConceptSnippet string: '');
+		  yourself
+]
+
+{ #category : 'accessing' }
+IdConcept class >> example [
+	<gtExample>
+	^ self
+		given: [ ]
+		when: [ IdConcept fromString: 'Lisp' ]
+		then: [ :idea | idea markdownString should equal: 'Lisp' ]
+]
+
+{ #category : 'instance creation' }
+IdConcept class >> fromString: markdownString [
+	
+	^ self new
+		initializeMarkdownString: markdownString;
+		yourself
+]
+
+{ #category : 'accessing' }
 IdConcept >> editor [
-	^ BrEditableLabel new
-		aptitude: BrGlamorousEditableLabelAptitude new glamorousRegularFontAndSize;
-		when: BrEditorAcceptWish
-			do: [ :aWish | self lepiterPage updateTitle: aWish text greaseString ];
-		text: self lepiterPage title.
+	^ LeSingleSnippetElement new
+		initializeForPage: self lepiterPage;
+		yourself
 ]
 
 { #category : 'accessing' }
@@ -25,7 +48,15 @@ IdConcept >> gtViewGraphFor: aView [
 		priority: 5;
 		painting: [ :m |
 			m nodes
-				stencil: [ :obj | self editor ];
+				stencil: [ :obj |
+					| e |
+					e := self editor
+					layout: BlLinearLayout new;
+    border: (BlBorder paint: Color veryLightGray width: 1);
+						constraintsDo: [ :c | 
+							c horizontal fitContent.
+							c vertical fitContent].
+					e ];
 				with: { self }.
 			"m edges connectFrom: #parent."
 			m layout horizontalTree.
@@ -33,15 +64,32 @@ IdConcept >> gtViewGraphFor: aView [
 ]
 
 { #category : 'accessing' }
+IdConcept >> initializeMarkdownString: aString [
+	"Directly set the string to avoid update mechanism, which needs a DB"
+	self lepiterPage title: aString.
+	self lepiterPage children first string: aString.
+]
+
+{ #category : 'accessing' }
 IdConcept >> lepiterPage [
 
-	^ lepiterPage
+	^ lepiterPage ifNil: [ lepiterPage := self class defaultLepiterPage  ]
 ]
 
 { #category : 'accessing' }
 IdConcept >> lepiterPage: anObject [
 
 	lepiterPage := anObject
+]
+
+{ #category : 'accessing' }
+IdConcept >> markdownString [
+	^ self lepiterPage children first string
+]
+
+{ #category : 'accessing' }
+IdConcept >> markdownString: aString [
+	^ self lepiterPage children first updateString: aString
 ]
 
 { #category : 'accessing' }
