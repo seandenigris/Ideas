@@ -14,6 +14,18 @@ Class {
 	#category : 'Ideas'
 }
 
+{ #category : 'persistence' }
+IdMind class >> restoreFrom: anObject [
+
+	UniqueInstance := anObject.
+]
+
+{ #category : 'persistence' }
+IdMind class >> spData [
+
+	^ UniqueInstance.
+]
+
 { #category : 'accessing' }
 IdMind class >> uniqueInstance [
 	^ UniqueInstance ifNil: [ UniqueInstance := self new ]
