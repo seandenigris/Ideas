@@ -139,7 +139,8 @@ IdMind >> gtViewIdeasOn: aView [
 		title: 'Ideas' translated;
 		priority: 8;
 		items: [ self ideas asOrderedCollection ];
-		itemText: [ :e | e markdownString asRopedText ]
+		itemText: [ :e | e markdownString asRopedText ];
+		actionUpdateButton
 ]
 
 { #category : 'DB - testing' }
