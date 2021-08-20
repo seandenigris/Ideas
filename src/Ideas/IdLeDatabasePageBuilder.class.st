@@ -6,14 +6,12 @@ Class {
 
 { #category : 'defaults' }
 IdLeDatabasePageBuilder >> add [
-	| page concept |
-	page := super add.
+	| concept |
 	concept := IdConcept new
-		mind: self;
-		lepiterPage: page;
+		lepiterPage: super add;
 		yourself.
-	self database mind ideas add: concept.
-	^ page
+	self database mind addIdea: concept.
+	^ concept lepiterPage
 ]
 
 { #category : 'defaults' }
