@@ -68,7 +68,7 @@ IdMind >> addIdea: anIdea [
 	anIdea mind: self.
 	(self lepiterDatabase children includes: anIdea lepiterPage)
 		ifFalse: [ self lepiterDatabase addPage: anIdea lepiterPage ].
-	self ideas add: anIdea
+	^ self ideas add: anIdea
 ]
 
 { #category : 'DB' }
@@ -174,29 +174,12 @@ IdMind >> links [
 
 { #category : 'accessing' }
 IdMind >> newConcept [
-	| lepiterPage result snippet |
-	lepiterPage := LePage empty.
-	snippet := IdConceptSnippet string: ''.
-	lepiterPage addSnippet: snippet.
-	self lepiterDatabase addPage: lepiterPage.
-	result := IdConcept new
-		mind: self;
-		lepiterPage: lepiterPage;
-		yourself.
-	^ self ideas add: result
+	^ self addIdea: IdConcept new
 ]
 
 { #category : 'accessing' }
 IdMind >> newIdea [
-	| lepiterPage result |
-	lepiterPage := LePage unnamedPageWithDefaultTitle: ''.
-	lepiterPage addSnippet: LeTextSnippet empty.
-	self lepiterDatabase addPage: lepiterPage.
-	result := IdIdea new
-		mind: self;
-		lepiterPage: lepiterPage;
-		yourself.
-	^ self ideas add: result
+	^ self addIdea: IdIdea new.
 ]
 
 { #category : 'DB' }
