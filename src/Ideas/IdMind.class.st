@@ -160,7 +160,11 @@ IdMind >> isDatabase [
 
 { #category : 'accessing' }
 IdMind >> lepiterDatabase [
-	^ lepiterDatabase ifNil: [ lepiterDatabase := IdLeDatabase new ]
+	lepiterDatabase ifNotNil: [ ^ lepiterDatabase ].
+	
+	^ lepiterDatabase := IdLeDatabase new
+		mind: self;
+		yourself.
 ]
 
 { #category : 'accessing' }
