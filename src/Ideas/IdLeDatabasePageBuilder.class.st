@@ -18,3 +18,9 @@ IdLeDatabasePageBuilder >> add [
 IdLeDatabasePageBuilder >> defaultContent [
 	^ IdConcept defaultLepiterPage
 ]
+
+{ #category : 'accessing' }
+IdLeDatabasePageBuilder >> title: aTitle [
+	super title: aTitle.
+	self page children first string: aTitle
+]
