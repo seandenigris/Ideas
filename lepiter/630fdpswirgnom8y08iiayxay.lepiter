@@ -34,7 +34,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-30T14:18:37.584375-04:00"
+									"dateAndTimeString" : "2021-08-23T19:11:35.577195+02:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +44,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Okay, so there's information.\r\rIt is usually a conversation/story.  If we believe the speaker, it's what's so, but who knows if this is true.  To be truer, it could be \"some people...\"  The what's-so-est thing is \"N said that...\"  So, let's put aside the issue of truth for a minute.  Let's say there's no such thing... maybe, lol.\r\rOkay, so what information does this represent?  There are (at least) two ways to look at it:\r* mental model - how the world is\r* utility - how that applies to my life and what I say matters (my game).\r\rSo let's explore the mental model aspect.  I may already 'know' the relevant concepts, so what is being provided?  The new part is that N is reporting on an observation I haven't necessarily had. So the link is the piece we want to record here.\r\rWhat is the fundamental unit of information?  A Thing?  Conversation?  Idea?  Thought?  Impression?  Story?  Information?  Which abstraction captures everything???\n\nSome systems simply call it a note, which kind of sidestepps the issue. Maybe that's the simplest thing that could work..."
+							"string" : "Okay, so there's information.\r\rIt is usually a conversation/[[story]].  If we believe the speaker, it's what's so, but who knows if this is true.  To be truer, it could be \"some people...\"  The what's-so-est thing is \"N said that...\"  So, let's put aside the issue of truth for a minute.  Let's say there's no such thing... maybe, lol.\r\rOkay, so what information does this represent?  There are (at least) two ways to look at it:\r* mental model - how the world is\r* utility - how that applies to my life and what I say matters (my game).\r\rSo let's explore the mental model aspect.  I may already 'know' the relevant concepts, so what is being provided?  The new part is that N is reporting on an observation I haven't necessarily had. So the link is the piece we want to record here.\r\rWhat is the fundamental unit of information?  A Thing?  Conversation?  Idea?  Thought?  Impression?  Story?  Information?  Which abstraction captures everything???\n\nSome systems simply call it a note, which kind of sidestepps the issue. Maybe that's the simplest thing that could work..."
 						},
 						{
 							"__type" : "textSnippet",
@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-07-27T15:33:46.532597-04:00"
+									"dateAndTimeString" : "2021-08-23T19:12:46.722081+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "## Idea\n\nDefinition (from Apple Dictionary):\r- a concept or mental impression: our menu list will give you some idea of how interesting a low-fat diet can be.\r- an opinion or belief: nineteenth-century ideas about drinking.\r\rIt starts on the level of hypothesis, a proposed explanation of a phenomenon which still has to be rigorously tested. After undergoing extensive testing, it may become a theory, generally accepted to be the accurate explanation behind an observation.\r\rThere may be a third level of personal verification. If you test a hypothesis, it is a theory for me, because my confidence in it depends on my trust in your intentions, abilities, and performance - in your understanding of the problem, design of your experiement, and how you carried it out. Only when I have done all that work myself can an idea be more than a theory for me. Of course, I, as a flawed human being, am prone to the same types of errors that you would make, so the most robust evidence would be independently observed by multiple people, oneself included.\n\nImplementation Attempts:\n- {{gtClass:FwIdea}}"
+							"string" : "## Idea\n\nDefinition (from Apple Dictionary):\r- a concept or mental impression: our menu list will give you some idea of how interesting a low-fat diet can be.\r- an opinion or belief: nineteenth-century ideas about drinking.\r\rIt starts on the level of hypothesis, a proposed explanation of a phenomenon which still has to be rigorously tested. After undergoing extensive testing, it may become a theory, generally accepted to be the accurate explanation behind an observation.\r\rThere may be a third level of personal verification. If you test a hypothesis, it is a theory for me, because my confidence in it depends on my trust in your intentions, abilities, and performance - in your understanding of the problem, design of your experiement, and how you carried it out. Only when I have done all that work myself can an idea be more than a theory for me. Of course, I, as a flawed human being, am prone to the same types of errors that you would make, so the most robust evidence would be independently observed by multiple people, oneself included.\n\nImplementation Attempts:\n- {{gtClass:IdIdea}}"
 						},
 						{
 							"__type" : "textSnippet",
