@@ -17,7 +17,8 @@ IdTLinkable >> gtViewIdLinksOn: aView [
 		title: 'Links' translated;
 		priority: 60;
 		items: [ self links asOrderedCollection ];
-		send: [ :l | l ends detect: [ :e | e ~= self ] ]
+		send: [ :l | l ends detect: [ :e | e ~= self ] ];
+		actionUpdateButtonTooltip: 'Update'.
 ]
 
 { #category : #accessing }
