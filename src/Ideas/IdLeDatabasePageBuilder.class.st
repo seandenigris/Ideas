@@ -1,10 +1,10 @@
 Class {
-	#name : 'IdLeDatabasePageBuilder',
-	#superclass : 'LeDatabasePageBuilder',
+	#name : #IdLeDatabasePageBuilder,
+	#superclass : #LeDatabasePageBuilder,
 	#category : 'Ideas-Support'
 }
 
-{ #category : 'defaults' }
+{ #category : #defaults }
 IdLeDatabasePageBuilder >> add [
 	| concept |
 	concept := IdConcept new
@@ -14,12 +14,12 @@ IdLeDatabasePageBuilder >> add [
 	^ concept lepiterPage
 ]
 
-{ #category : 'defaults' }
+{ #category : #defaults }
 IdLeDatabasePageBuilder >> defaultContent [
 	^ IdConcept defaultLepiterPage
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdLeDatabasePageBuilder >> title: aTitle [
 	super title: aTitle.
 	self page children first string: aTitle

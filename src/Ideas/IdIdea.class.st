@@ -1,13 +1,13 @@
 Class {
-	#name : 'IdIdea',
-	#superclass : 'Object',
+	#name : #IdIdea,
+	#superclass : #Object,
 	#instVars : [
 		'lepiterPage'
 	],
 	#category : 'Ideas-Core'
 }
 
-{ #category : 'examples' }
+{ #category : #examples }
 IdIdea class >> example [
 	<gtExample>
 	^ self
@@ -16,31 +16,31 @@ IdIdea class >> example [
 		then: [ :idea | ]
 ]
 
-{ #category : 'instance creation' }
+{ #category : #'instance creation' }
 IdIdea class >> fromString: aString [
 	^ self new
 		markdownString: aString;
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> asElement [
 	^ IdNodeElement on: self
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> displayString [
 	^ self text string
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> editor [
 	^ LeSingleSnippetElement new
 		initializeForPage: self lepiterPage;
 		yourself
 ]
 
-{ #category : 'views' }
+{ #category : #views }
 IdIdea >> gtEditorOn: aView [
 	<gtView>
 	^ aView explicit
@@ -49,7 +49,7 @@ IdIdea >> gtEditorOn: aView [
 		stencil: [ self editor ]
 ]
 
-{ #category : 'views' }
+{ #category : #views }
 IdIdea >> gtViewGraphFor: aView [
 	<gtView>
 	^ aView mondrian
@@ -72,7 +72,7 @@ IdIdea >> gtViewGraphFor: aView [
 			m ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> lepiterPage [
 	lepiterPage ifNotNil: [ ^ lepiterPage ].
 	
@@ -82,37 +82,37 @@ IdIdea >> lepiterPage [
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> lepiterPage: aPage [
 	lepiterPage := aPage
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> markdownString [
 	^ self lepiterPage children first string
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> markdownString: aString [
 	self text string: aString
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> mind [
 	^ self text database
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> mind: aMind [
 	self text database: aMind.
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> printOn: aStream [
 	aStream nextPutAll: self markdownString
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdea >> text [
 	^ self lepiterPage children first
 ]

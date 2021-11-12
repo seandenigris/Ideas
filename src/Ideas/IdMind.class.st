@@ -1,6 +1,6 @@
 Class {
-	#name : 'IdMind',
-	#superclass : 'Object',
+	#name : #IdMind,
+	#superclass : #Object,
 	#instVars : [
 		'ideas',
 		'links',
@@ -14,7 +14,7 @@ Class {
 	#category : 'Ideas-Core'
 }
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind class >> example [
 	^ self 
 		given: [ IdMind new ]
@@ -26,36 +26,36 @@ IdMind class >> example [
 		then: [ :m | m ideas should haveSize: 2 ]
 ]
 
-{ #category : 'persistence' }
+{ #category : #persistence }
 IdMind class >> restoreFrom: anObject [
 
 	UniqueInstance := anObject.
 ]
 
-{ #category : 'persistence' }
+{ #category : #persistence }
 IdMind class >> spData [
 
 	^ UniqueInstance.
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind class >> uniqueInstance [
 	^ UniqueInstance ifNil: [ UniqueInstance := self new ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind class >> uniqueInstance: anIdMind [
 	UniqueInstance := anIdMind
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> addExplicitLink: aLink [
 	aLink onAboutToAddToDatabase: self.
 	self links addLink: aLink.
 	aLink onAddedToDatabase: self.
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> addExplicitLinks: aCollectionOfExplicitLinks [
 	self assert: [ aCollectionOfExplicitLinks notNil ].
 	
@@ -63,7 +63,7 @@ IdMind >> addExplicitLinks: aCollectionOfExplicitLinks [
 		self addExplicitLink: eachLink ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> addIdea: anIdea [
 	anIdea mind: self.
 	(self lepiterDatabase children includes: anIdea lepiterPage)
@@ -71,12 +71,12 @@ IdMind >> addIdea: anIdea [
 	^ self ideas add: anIdea
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> cachedLinksForContent: aSnippet [
 	^ self links select: [ :e | e origin = aSnippet ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> gtGtSpotterFor: aStep [
 	<gtSearch>
 	^ aStep listProcessor
@@ -88,7 +88,7 @@ IdMind >> gtGtSpotterFor: aStep [
 		itemName: #displayString
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> gtSpotterNewIdeaFor: aStep [
 	<gtSearch>
 	aStep listProcessor
@@ -110,7 +110,7 @@ IdMind >> gtSpotterNewIdeaFor: aStep [
 			self ideas add: instance ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> gtSpotterNewWorkFor: aStep [
 	<gtSearch>
 	aStep listProcessor
@@ -132,7 +132,7 @@ IdMind >> gtSpotterNewWorkFor: aStep [
 			self addIdea: instance ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> gtViewIdeasOn: aView [
 	<gtView>
 	^ aView list
@@ -143,22 +143,22 @@ IdMind >> gtViewIdeasOn: aView [
 		actionUpdateButton
 ]
 
-{ #category : 'DB - testing' }
+{ #category : #'DB - testing' }
 IdMind >> hasIdeaUID: newUuid [ 
 	^ self ideas anySatisfy: [ :e | e text uid == newUuid ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> ideas [
 	^ ideas ifNil: [ ideas := Bag new ]
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> isDatabase [
 	^ true
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> lepiterDatabase [
 	lepiterDatabase ifNotNil: [ ^ lepiterDatabase ].
 	
@@ -167,27 +167,27 @@ IdMind >> lepiterDatabase [
 		yourself.
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> lepiterDatabase: anIdLeDatabase [
 	lepiterDatabase := anIdLeDatabase
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> links [
 	^ links ifNil: [ links := LeExplicitLinks new ].
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> newConcept [
 	^ self addIdea: IdConcept new
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> newIdea [
 	^ self addIdea: IdIdea new.
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> newUniqueUuid [
 	"Return a new UUID unique to this database based on the current content"
 	| newUuid |
@@ -200,7 +200,7 @@ IdMind >> newUniqueUuid [
 	^ newUuid
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdMind >> pageNamed: aString ifPresent: presentBlock ifAbsent: absentBlock [
 
 	^ self ideas
@@ -209,7 +209,7 @@ IdMind >> pageNamed: aString ifPresent: presentBlock ifAbsent: absentBlock [
 		  ifNone: absentBlock
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> removeExplicitLinks: leExplicitLinksToRemove [
 	self assert: [ leExplicitLinksToRemove notNil ].
 
@@ -217,17 +217,17 @@ IdMind >> removeExplicitLinks: leExplicitLinksToRemove [
 	^ leExplicitLinksToRemove
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> userEmail [
 	^ userEmailString
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> userEmail: aString [
 	userEmailString := aString
 ]
 
-{ #category : 'DB' }
+{ #category : #DB }
 IdMind >> uuid [
 	^ uuid ifNil: [ uuid := UUID new ]
 ]

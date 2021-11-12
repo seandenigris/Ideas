@@ -1,13 +1,13 @@
 Class {
-	#name : 'IdConceptSnippet',
-	#superclass : 'LeTextSnippet',
+	#name : #IdConceptSnippet,
+	#superclass : #LeTextSnippet,
 	#instVars : [
 		'idea'
 	],
 	#category : 'Ideas-Support'
 }
 
-{ #category : 'instance creation' }
+{ #category : #'instance creation' }
 IdConceptSnippet class >> forIdea: anIdea [
 	"Use 'idea' terminology for now because may merge during refactoring"
 	^ self new
@@ -15,25 +15,25 @@ IdConceptSnippet class >> forIdea: anIdea [
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConceptSnippet class >> leJsonV4Name [
 
 	^ 'conceptSnippet'
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConceptSnippet >> announceTextChangedBy: anObject [
 	self page ifNotNil: [ :p | p updateTitle: self string ].
 	super announceTextChangedBy: anObject
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConceptSnippet >> idea [
 
 	^ idea
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConceptSnippet >> idea: anObject [
 
 	idea := anObject

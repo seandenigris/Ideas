@@ -1,30 +1,30 @@
 Class {
-	#name : 'IdLeDatabase',
-	#superclass : 'LeDatabase',
+	#name : #IdLeDatabase,
+	#superclass : #LeDatabase,
 	#instVars : [
 		'mind'
 	],
 	#category : 'Ideas-Support'
 }
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdLeDatabase >> mind [
 
 	^ mind
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdLeDatabase >> mind: anObject [
 
 	mind := anObject
 ]
 
-{ #category : 'initialization' }
+{ #category : #initialization }
 IdLeDatabase >> pageBuilder [
 	^ IdLeDatabasePageBuilder new database: self
 ]
 
-{ #category : 'initialization' }
+{ #category : #initialization }
 IdLeDatabase >> setPageUpdate: aLePage [
 	super setPageUpdate: aLePage.
 	"self mind newConcept markdownString: "

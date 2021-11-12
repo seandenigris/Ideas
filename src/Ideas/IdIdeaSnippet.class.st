@@ -1,41 +1,41 @@
 Class {
-	#name : 'IdIdeaSnippet',
-	#superclass : 'LeTextSnippet',
+	#name : #IdIdeaSnippet,
+	#superclass : #LeTextSnippet,
 	#instVars : [
 		'idea'
 	],
 	#category : 'Ideas-Support'
 }
 
-{ #category : 'instance creation' }
+{ #category : #'instance creation' }
 IdIdeaSnippet class >> forIdea: anIdea [
 	^ self new
 		idea: anIdea;
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdeaSnippet class >> leJsonV4Name [
 
 	^ 'ideaSnippet'
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdeaSnippet >> asElement [
 	^ self idea asElement
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdeaSnippet >> idea [
 	^ idea
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdeaSnippet >> idea: anIdea [
 	idea := anIdea
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdIdeaSnippet >> spawnLinkTarget: aNode from: aButton [
 	Halt once.
 	^ super spawnLinkTarget: aNode from: aButton

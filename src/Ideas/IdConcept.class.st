@@ -1,6 +1,6 @@
 Class {
-	#name : 'IdConcept',
-	#superclass : 'Object',
+	#name : #IdConcept,
+	#superclass : #Object,
 	#instVars : [
 		'lepiterPage',
 		'mind'
@@ -8,7 +8,7 @@ Class {
 	#category : 'Ideas-Core'
 }
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept class >> defaultLepiterPage [
 
 	^ LePage empty
@@ -16,7 +16,7 @@ IdConcept class >> defaultLepiterPage [
 		  yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept class >> example [
 	<gtExample>
 	^ self
@@ -25,7 +25,7 @@ IdConcept class >> example [
 		then: [ :idea | idea markdownString should equal: 'Lisp' ]
 ]
 
-{ #category : 'instance creation' }
+{ #category : #'instance creation' }
 IdConcept class >> fromString: markdownString [
 	
 	^ self new
@@ -33,14 +33,14 @@ IdConcept class >> fromString: markdownString [
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> editor [
 	^ LeSingleSnippetElement new
 		initializeForPage: self lepiterPage;
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> gtViewGraphFor: aView [
 	<gtView>
 	^ aView mondrian
@@ -63,48 +63,48 @@ IdConcept >> gtViewGraphFor: aView [
 			m ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> initializeMarkdownString: aString [
 	"Directly set the string to avoid update mechanism, which needs a DB"
 	self lepiterPage title: aString.
 	self lepiterPage children first string: aString.
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> lepiterPage [
 
 	^ lepiterPage ifNil: [ lepiterPage := self class defaultLepiterPage  ]
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> lepiterPage: anObject [
 
 	lepiterPage := anObject
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> markdownString [
 	^ self lepiterPage children first string
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> markdownString: aString [
 	^ self lepiterPage children first updateString: aString
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> mind [
 
 	^ mind
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> mind: anObject [
 
 	mind := anObject
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdConcept >> printOn: aStream [
 	aStream nextPutAll: self lepiterPage title
 ]

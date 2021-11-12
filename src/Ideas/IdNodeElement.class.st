@@ -1,6 +1,6 @@
 Class {
-	#name : 'IdNodeElement',
-	#superclass : 'BlElement',
+	#name : #IdNodeElement,
+	#superclass : #BlElement,
 	#instVars : [
 		'model',
 		'expander',
@@ -9,20 +9,20 @@ Class {
 	#category : 'Ideas-Support'
 }
 
-{ #category : 'examples' }
+{ #category : #examples }
 IdNodeElement class >> example [
 	<gtExample>
 	^ IdIdea example asElement
 ]
 
-{ #category : 'instance creation' }
+{ #category : #'instance creation' }
 IdNodeElement class >> on: macro [
 	^ self new
 		model: macro;
 		yourself
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdNodeElement >> initialize [
 	super initialize.
 	
@@ -49,12 +49,12 @@ IdNodeElement >> initialize [
 	^ self
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdNodeElement >> model [
 	^ model
 ]
 
-{ #category : 'accessing' }
+{ #category : #accessing }
 IdNodeElement >> model: macro [
 	model := macro.
 	
@@ -74,10 +74,10 @@ IdNodeElement >> model: macro [
 				background: Color green ].
 ]
 
-{ #category : 'lepiter' }
+{ #category : #lepiter }
 IdNodeElement >> selectAndScrollTo: snippet [
 ]
 
-{ #category : 'lepiter' }
+{ #category : #lepiter }
 IdNodeElement >> selectionTransformation: aBlock [
 ]
