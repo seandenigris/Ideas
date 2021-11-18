@@ -1,7 +1,12 @@
+"
+#Responsibilities
+- When a new page is added, make sure a corresponding new concept is added to the mind
+- Store the concept's markup (in the page's first snippet)
+"
 Class {
 	#name : #IdLeDatabasePageBuilder,
 	#superclass : #LeDatabasePageBuilder,
-	#category : 'Ideas-Support'
+	#category : #'Ideas-Support'
 }
 
 { #category : #defaults }

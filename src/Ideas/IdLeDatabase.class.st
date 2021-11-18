@@ -1,10 +1,13 @@
+"
+I am associated with an {{gtClass:IdMind}}. Most of my work is done by my {{gtClass:IdLeDatabasePageBuilder}}.
+"
 Class {
 	#name : #IdLeDatabase,
 	#superclass : #LeDatabase,
 	#instVars : [
 		'mind'
 	],
-	#category : 'Ideas-Support'
+	#category : #'Ideas-Support'
 }
 
 { #category : #accessing }
