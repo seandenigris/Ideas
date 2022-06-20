@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Ideas',
+      #directory : 'src',
+      #platforms : [ #pharo ]
+    }
+  ]
+}
