@@ -11,7 +11,7 @@ Class {
 	#classVars : [
 		'UniqueInstance'
 	],
-	#category : 'Ideas-Core'
+	#category : #'Ideas-Core'
 }
 
 { #category : #accessing }
@@ -77,14 +77,13 @@ IdMind >> cachedLinksForContent: aSnippet [
 ]
 
 { #category : #accessing }
-IdMind >> gtGtSpotterFor: aStep [
+IdMind >> gtGtSpotterFor: aSearch [
 	<gtSearch>
-	^ aStep listProcessor
+	^ aSearch list
 		priority: 5;
 		title: 'Ideas';
-		allCandidates: [ self ideas ];
-		filter: GtFilterSubstrings;
-		candidatesLimit: 7;
+		items: [ self ideas ];
+		matchSubstrings;
 		itemName: #displayString
 ]
 
