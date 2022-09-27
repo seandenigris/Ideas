@@ -88,9 +88,10 @@ IdMind >> gtGtSpotterFor: aSearch [
 ]
 
 { #category : #accessing }
-IdMind >> gtSpotterNewIdeaFor: aStep [
+IdMind >> gtSpotterNewIdeaFor: aSearch [
 	<gtSearch>
-	aStep listProcessor
+	
+	^ aSearch list
 		title: 'New Idea';
 		priority: 50;
 		itemName: [ :input | 'Create new idea: ', input ];
@@ -110,9 +111,10 @@ IdMind >> gtSpotterNewIdeaFor: aStep [
 ]
 
 { #category : #accessing }
-IdMind >> gtSpotterNewWorkFor: aStep [
+IdMind >> gtSpotterNewWorkFor: aSearch [
 	<gtSearch>
-	aStep listProcessor
+	
+	^ aSearch list
 		title: 'New Idea';
 		priority: 50;
 		itemName: [ :input | 'Create new idea: ', input ];
