@@ -77,7 +77,7 @@ IdMind >> cachedLinksForContent: aSnippet [
 ]
 
 { #category : #accessing }
-IdMind >> gtGtSpotterFor: aSearch [
+IdMind >> gtSearchIdeasFor: aSearch [
 	<gtSearch>
 	^ aSearch list
 		priority: 5;
@@ -88,49 +88,23 @@ IdMind >> gtGtSpotterFor: aSearch [
 ]
 
 { #category : #accessing }
-IdMind >> gtSpotterNewIdeaFor: aSearch [
+IdMind >> gtSpotNewIdeaFor: aSearch [
 	<gtSearch>
 	
-	^ aSearch list
+	^ aSearch explicit
 		title: 'New Idea';
 		priority: 50;
-		itemName: [ :input | 'Create new idea: ', input ];
-		previewObject: [ :input | IdIdea fromString: input ];
-		wantsToDisplayOnEmptyQuery: false;
-		filter: GtNullFilter
-			item: [ :filter :context | 
-				| isExisting |
-				isExisting := self ideas anySatisfy: [ :e | 
-					e markdownString = context textTrimmed ].
-				isExisting ifFalse: [ 
-					filter value: context textTrimmed ] ];
-		send: [ :input :spotterStep | 
-			| instance |
-			instance := IdIdea fromString: input.
-			self ideas add: instance ]
-]
-
-{ #category : #accessing }
-IdMind >> gtSpotterNewWorkFor: aSearch [
-	<gtSearch>
-	
-	^ aSearch list
-		title: 'New Idea';
-		priority: 50;
-		itemName: [ :input | 'Create new idea: ', input ];
-		previewObject: [ :input | IdIdea fromString: input ];
-		wantsToDisplayOnEmptyQuery: false;
-		filter: GtNullFilter
-			item: [ :filter :context | 
-				| isExisting |
-				isExisting := self ideas anySatisfy: [ :e | 
-					e markdownString = context textTrimmed ].
-				isExisting ifFalse: [ 
-					filter value: context textTrimmed ] ];
-		send: [ :input :spotterStep | 
-			| instance |
-			instance := IdIdea fromString: input.
-			self addIdea: instance ]
+		itemName: [ :result | '+ ', result gtDisplayText ];
+		search: [ :aContext | 
+			| input isExisting results |
+			input := aContext searchQuery trimBoth.
+			isExisting := self ideas anySatisfy: [ :e | 
+				e markdownString = aContext textTrimmed ].
+			results := isExisting 
+				ifFalse: [ { IdIdea fromString: input } ]
+				ifTrue: [ {} ].
+			results asAsyncStream ];
+		itemSpawnAfter: [ :result | self addIdea: result ]
 ]
 
 { #category : #accessing }
