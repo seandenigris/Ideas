@@ -104,7 +104,7 @@ IdMind >> gtSpotNewIdeaFor: aSearch [
 				ifFalse: [ { IdIdea fromString: input } ]
 				ifTrue: [ {} ].
 			results asAsyncStream ];
-		itemSpawnAfter: [ :result | self addIdea: result ]
+		send: [ :result | self addIdea: result ]
 ]
 
 { #category : #accessing }
