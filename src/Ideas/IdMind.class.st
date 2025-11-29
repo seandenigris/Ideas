@@ -82,7 +82,7 @@ IdMind >> gtSearchIdeasFor: aSearch [
 	^ aSearch list
 		priority: 5;
 		title: 'Ideas';
-		items: [ self ideas ];
+		items: [ self ideas asOrderedCollection ];
 		matchSubstrings;
 		itemName: #displayString
 ]
@@ -99,7 +99,7 @@ IdMind >> gtSpotNewIdeaFor: aSearch [
 			| input isExisting results |
 			input := aContext searchQuery trimBoth.
 			isExisting := self ideas anySatisfy: [ :e | 
-				e markdownString = aContext textTrimmed ].
+				e markdownString = aContext searchQuery trimmed ].
 			results := isExisting 
 				ifFalse: [ { IdIdea fromString: input } ]
 				ifTrue: [ {} ].
